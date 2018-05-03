@@ -23,7 +23,7 @@ public class Customer {
     private List<ContactNumber> contactNumber;
     private Address address;
     private List<String> typeActivity;
-    private String AddInformation;
+    private String addInformation;
 
     public Customer() {
     }
@@ -61,7 +61,51 @@ public class Customer {
     }
 
     public String getAddInformation() {
-        return AddInformation;
+        return addInformation;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
+
+    public void setCodeOrganization(Integer codeOrganization) {
+        this.codeOrganization = codeOrganization;
+    }
+
+    public void setTypeCustomer(TypeCustomer typeCustomer) {
+        this.typeCustomer = typeCustomer;
+    }
+
+    public void setContactPerson(List<ContactPerson> contactPerson) {
+        this.contactPerson = contactPerson;
+    }
+
+    public void setContactNumber(List<ContactNumber> contactNumber) {
+        this.contactNumber = contactNumber;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
+    public void setTypeActivity(List<String> typeActivity) {
+        this.typeActivity = typeActivity;
+    }
+
+    public void setAddInformation(String addInformation) {
+        this.addInformation = addInformation;
     }
 
     @Override
@@ -76,7 +120,7 @@ public class Customer {
                 ", contactNumber=" + contactNumber +
                 ", address=" + address +
                 ", typeActivity=" + typeActivity +
-                ", AddInformation='" + AddInformation + '\'' +
+                ", AddInformation='" + addInformation + '\'' +
                 '}';
     }
 }
