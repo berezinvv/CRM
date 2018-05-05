@@ -76,7 +76,7 @@ public class CRMController {
         if (typeCustomer != null && !typeActivity.isEmpty()) {
             typeActivityList.clear();
             typeActivityList.add(typeActivity);
-            return customerRepository.findByTypeCustomerAndTypeActivityIn(typeCustomer,typeActivityList);
+            return customerRepository.findByTypeCustomerAndTypeActivityIn(typeCustomer, typeActivityList);
         }
 
         if (typeCustomer != null) {
