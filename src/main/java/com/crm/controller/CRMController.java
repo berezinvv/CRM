@@ -55,16 +55,12 @@ public class CRMController {
     }
 
     @RequestMapping("/find")
-    public Customer findByParam(@RequestParam("codeOrg") Integer codeOrg) {
+    public List<Customer> findByParam(@RequestParam("codeOrg") Integer codeOrg) {
 
         if (codeOrg != 0) {
-            Customer customer = customerRepository.findByCodeOrganization(codeOrg);
-            if (customer == null) {
-                return new Customer();
-            }
-            return customer;
+            return customerRepository.findByCodeOrganizationLike(codeOrg);
         }
-        return new Customer();
+        return new ArrayList<Customer>();
     }
 
     @RequestMapping("/findAll")
