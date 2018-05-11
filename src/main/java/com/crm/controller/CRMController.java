@@ -33,10 +33,7 @@ public class CRMController {
         customer.setFullName("Товариство з обмеженою відповідальністю \"Маяк\"");
         customer.setCodeOrganization(30852309);
         customer.setTypeCustomer(TypeCustomer.buyer);
-        List<String> typeActivityList = new ArrayList<>();
-        typeActivityList.add("Зерно");
-        typeActivityList.add("Семена");
-        customer.setTypeActivity(typeActivityList);
+        customer.setTypeActivity("Зерно");
         customerRepository.save(customer);
 
         Customer customer1 = new Customer();
@@ -45,11 +42,7 @@ public class CRMController {
         customer1.setFullName("Товариство з обмеженою відповідальністю\"Сільськогосподарське  науково-виробниче підприємство Батьківщина\"                                                                           ");
         customer1.setCodeOrganization(36204642);
         customer1.setTypeCustomer(TypeCustomer.buyer);
-        typeActivityList.clear();
-        typeActivityList.add("Зерно");
-        typeActivityList.add("Семена");
-        typeActivityList.add("ГП");
-        customer1.setTypeActivity(typeActivityList);
+        customer1.setTypeActivity("Семена");
         customerRepository.save(customer1);
         return "Done";
     }

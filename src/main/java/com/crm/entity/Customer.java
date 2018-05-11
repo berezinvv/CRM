@@ -19,10 +19,10 @@ public class Customer {
     private String fullName;
     private Integer codeOrganization;
     private TypeCustomer typeCustomer;
-    private List<ContactPerson> contactPerson;
-    private List<ContactNumber> contactNumber;
+    private ContactPerson contactPerson;
+    private ContactNumber contactNumber;
     private Address address;
-    private List<String> typeActivity;
+    private String typeActivity;
     private String addInformation;
 
     public Customer() {
@@ -44,11 +44,11 @@ public class Customer {
         return typeCustomer;
     }
 
-    public List<ContactPerson> getContactPerson() {
+    public ContactPerson getContactPerson() {
         return contactPerson;
     }
 
-    public List<ContactNumber> getContactNumber() {
+    public ContactNumber getContactNumber() {
         return contactNumber;
     }
 
@@ -56,7 +56,7 @@ public class Customer {
         return address;
     }
 
-    public List<String> getTypeActivity() {
+    public String getTypeActivity() {
         return typeActivity;
     }
 
@@ -88,11 +88,11 @@ public class Customer {
         this.typeCustomer = typeCustomer;
     }
 
-    public void setContactPerson(List<ContactPerson> contactPerson) {
+    public void setContactPerson(ContactPerson contactPerson) {
         this.contactPerson = contactPerson;
     }
 
-    public void setContactNumber(List<ContactNumber> contactNumber) {
+    public void setContactNumber(ContactNumber contactNumber) {
         this.contactNumber = contactNumber;
     }
 
@@ -100,7 +100,7 @@ public class Customer {
         this.address = address;
     }
 
-    public void setTypeActivity(List<String> typeActivity) {
+    public void setTypeActivity(String typeActivity) {
         this.typeActivity = typeActivity;
     }
 

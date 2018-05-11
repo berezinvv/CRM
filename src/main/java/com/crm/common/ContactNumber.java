@@ -5,13 +5,11 @@ public class ContactNumber {
     private String countryCode;
     private String cityCode;
     private String number;
-    private TypeContactNumber type;
 
-    public ContactNumber(String countryCode, String cityCode, String number, TypeContactNumber type) {
+    public ContactNumber(String countryCode, String cityCode, String number) {
         this.countryCode = countryCode;
         this.cityCode = cityCode;
         this.number = number;
-        this.type = type;
     }
 
     public ContactNumber() {
@@ -41,18 +39,9 @@ public class ContactNumber {
         this.number = number;
     }
 
-    public TypeContactNumber getType() {
-        return type;
-    }
-
-    public void setType(TypeContactNumber type) {
-        this.type = type;
-    }
-
     @Override
     public String toString() {
         return "ContactNumber{" +
-                ", type=" + type +
                 ", number='" + countryCode + cityCode + number +
                 '}';
     }

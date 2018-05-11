@@ -16,4 +16,6 @@ public interface CustomerRepository extends MongoRepository<Customer, String> {
     public List<Customer> findByTypeCustomerAndTypeActivityIn(TypeCustomer typeCustomer, List<String> typeActivity);
 
     public List<Customer> findAll();
+
+    public Customer findById(Integer Id);
 }
